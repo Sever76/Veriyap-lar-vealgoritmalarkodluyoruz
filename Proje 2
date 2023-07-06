@@ -1,0 +1,9 @@
+[16,21,11,8,12,22] -> Merge Sort
+Yukarıdaki dizinin sort türünü göre aşamalarını yazınız.
+Bir listeyi parçaya bölerek tek eleman kalıncaya bölünmesini sağlıyor merge sort. Böldükten sonrada sıralı şekilde bizlere sunuyor.
+1. adım [16,21,11]  [8,12,22] parçaları üçlü elemanlar halinde iki gruba ayırdı.
+2.adım [16] [21,11]  [8] [12,22] ikinci aşamada ise üçlü olan parçaları tekrar böldü hem iki elemanlı hem de tek elemanlı olcak şekilde.
+3.adım [16] [21] [11]  [ 8] [12] [22] bu aşamada tüm elemanları teker teker gruplandırdı.
+4.adım [11,16,21]   [8,12,22] teker teker gruplanan elemanları sıralara sokarak üç elamlı gruplara ayırdı.
+5.adım [8,11,12,16,21,22] son olarak da hepsini düzene koydu.
+Big O gösterimi ise o(nlogn) dir.
