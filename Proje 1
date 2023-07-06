@@ -1,0 +1,22 @@
+[22,27,16,2,18,6] -> Insertion Sort
+1.Yukarı da verilen dizinin sort türüne göre aşamalarını yazınız.
+Algoritma her seferinde dizinin üzerinde ileri doğru ilerlerleyerek dizi elemanları her seferinde yer değiştirerek ilerler. Dizi elemanlarında  yerini değiştirdiğimiz elemanın yerine, dizide uygun olan eleman getirilir. Yerini değitirdiğimiz eleman boş durmasın diye onun yerine gider.
+İlk olarak dizide en küçük elemanı bulamamız gerekir. Bu dizide en küçük eleman 2 dir. O yüzden 2 sayısını 22 sayısı ile yerlerini değitirmemiz gerekir.
+[2,27,16,22,18,6] Yandaki şekilde yeni dizimiz oluşmuş olur. Bu işlemi n kadar yaparız. Tekarar aynı işlemi tekrarlarız takii tüm dzi sıralıncaya kadar, sıralanma sırasında bir öncekinden az işlem yaptığımızdan azalma olur.
+1. adım [2,27,16,22,18,6]
+Dizimiz hala düzelmediğinden tekar swap olur. 
+2. adım [2,6,16,22,18,27]
+İkinci adimda ilk iki veriyi tamamlamış olduk şimdi sıra üçüncü veriyi bulmaya geldi.Üçüncü adımda 18 ve 22 sayıları yer değiştirir .Böylece tüm verilerimiz bulunmuş olur.
+3. adım [2,6,16,18,22,27]
+Yeni dizmiz [2,6,16,18,22,27] şeklinde oluşmaktadır.Toplamayı yaptığımızdaki n^2 +1/2 olur. Big o notion da katları almadığımızdan, big o notion O " O (n^2)" olur.
+Time Complexity:
+Worst case:Aradığımız sayının sonda olması 
+Average case ise aradığımız sayının ortada olması.
+Best case ise aradığımız sayının en başında olması.
+Diziyi sıraladığımızda 18 sayısısı dizinin sonlarında yer aldığından average case kapsamına girer.
+[7,3,5,8,2,9,4,15,6]->Selection sort
+İlk dört adım
+1.adım[2,3,5,8,7,9,4,15,6]
+2.adım [2,3,4,8,7,9,5,15,6]
+3.adım [2,3,4,5,7,9,8,15,6]
+4.adım [2,3,4,5,6,9,8,15,7]
